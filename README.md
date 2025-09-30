@@ -1,3 +1,3 @@
-# Crews Development Homepage
+# My Portfolio Site
 
-This site was created in React with Typescript.
+This SPA was created with React and Vite.
