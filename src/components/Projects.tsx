@@ -1,4 +1,6 @@
+import "./Projects.css";
 import { ProjectCard } from "./ProjectCard";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 interface Project {
 	name: string;
@@ -14,13 +16,19 @@ interface ProjectsProps {
 }
 
 export function Projects({ projects }: ProjectsProps) {
+	const containerRef = useScrollReveal<HTMLDivElement>();
+
 	return (
 		<section className="projects">
-			<h2>Featured Projects</h2>
-			<div className="projects-grid content">
-				{projects.map((project) => (
-					<ProjectCard key={project.name} {...project} />
-				))}
+			<div className="content" ref={containerRef}>
+				<div className="section-header" data-reveal>
+					<h2>Featured Projects</h2>
+				</div>
+				<div className="projects-grid">
+					{projects.map((project, i) => (
+						<ProjectCard key={project.name} {...project} index={i} />
+					))}
+				</div>
 			</div>
 		</section>
 	);

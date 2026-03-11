@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 interface FooterProps {
 	name: string;
 	sourceUrl: string;

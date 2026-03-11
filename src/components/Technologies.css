@@ -1,0 +1,17 @@
+/* ===== Technologies Section ===== */
+.technologies {
+  padding: var(--section-padding) 0;
+  background: var(--color-bg-alt);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
