@@ -1,11 +1,13 @@
 import "./App.css";
 import { data } from "./lib/data";
+import { useTheme } from "./hooks/useTheme";
 import { Hero } from "./components/Hero";
 import { Technologies } from "./components/Technologies";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 
 function App() {
+	const { theme, toggleTheme } = useTheme();
 	return (
 		<>
 			<Hero
@@ -13,6 +15,8 @@ function App() {
 				tagline={data.tagline}
 				image={data.image}
 				links={data.links}
+				theme={theme}
+				onThemeToggle={toggleTheme}
 			/>
 			<Technologies technologies={data.technologies} />
 			<Projects projects={data.projects} />

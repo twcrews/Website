@@ -1,6 +1,7 @@
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 interface SocialLink {
 	name: string;
@@ -13,11 +14,20 @@ interface HeroProps {
 	tagline: string;
 	image: string;
 	links: SocialLink[];
+	theme: "light" | "dark";
+	onThemeToggle: () => void;
 }
 
-export function Hero({ name, tagline, image, links }: HeroProps) {
+export function Hero({ name, tagline, image, links, theme, onThemeToggle }: HeroProps) {
 	return (
 		<section className="hero">
+			<button
+				className="theme-toggle"
+				onClick={onThemeToggle}
+				aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+			>
+				<FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+			</button>
 			<div className="hero-content">
 				<div className="profile-image-ring">
 					<img src={image} alt={name} className="profile-image" />
