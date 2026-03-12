@@ -5,8 +5,7 @@
   background: var(--color-surface);
   padding: 1.75rem;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(100, 120, 140, 0.3);
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -101,7 +100,6 @@
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid var(--color-border);
   transition:
     background var(--transition-fast),
     color var(--transition-fast),

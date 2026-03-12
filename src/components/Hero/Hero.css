@@ -1,32 +1,36 @@
+/* ===== Shared icon button ===== */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--color-surface-alt);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 3px;
+}
+
 /* ===== Theme Toggle ===== */
 .theme-toggle {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
-  color: var(--color-text);
   font-size: 16px;
-  cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: all var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.theme-toggle:hover {
-  background: var(--color-surface-alt);
-  box-shadow: var(--shadow-md);
-}
-
-.theme-toggle:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.6);
-  outline-offset: 3px;
 }
 
 /* ===== Hero ===== */
@@ -44,14 +48,18 @@
   color: var(--color-text)
 }
 
-/* Gradient light blooms */
+/* Gradient light blooms (dark mode only) */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
+  background: none;
+  pointer-events: none;
+}
+
+:root[data-theme="dark"] .hero::before {
   background:
     radial-gradient(ellipse 100% 150% at 50% 10%, rgba(37, 160, 235, 0.35) 0%, transparent 65%);
-  pointer-events: none;
 }
 
 /* Dot grid overlay */
@@ -118,29 +126,10 @@
 }
 
 .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 46px;
   height: 46px;
-  color: var(--color-text);
   text-decoration: none;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-md);
   font-size: 19px;
-  transition: all var(--transition-fast);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm);
-}
-
-.social-link:hover {
-  background: var(--color-surface-alt);
-  box-shadow: var(--shadow-md);
-}
-
-.social-link:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.6);
-  outline-offset: 3px;
 }
 
 /* Animated scroll hint */

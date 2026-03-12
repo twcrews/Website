@@ -22,7 +22,7 @@ export function Hero({ name, tagline, image, links, theme, onThemeToggle }: Hero
 	return (
 		<section className="hero">
 			<button
-				className="theme-toggle"
+				className="icon-btn theme-toggle"
 				onClick={onThemeToggle}
 				aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
 			>
@@ -41,7 +41,7 @@ export function Hero({ name, tagline, image, links, theme, onThemeToggle }: Hero
 							href={link.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="social-link"
+							className="icon-btn social-link"
 							aria-label={link.name}
 						>
 							<FontAwesomeIcon icon={link.icon} />
