@@ -13,6 +13,7 @@ import {
 import {
 	faCloud,
 	faDatabase,
+	faPalette,
 	faScroll,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -55,7 +56,7 @@ export const data = {
 			icon: faReact,
 			color: "#61DAFB",
 			startYear: 2019,
-			experienceAreas: ["Redux", "Router", "TypeScript", "Material"],
+			experienceAreas: ["Router", "Context", "TypeScript", "Material", "Chakra", "Redux"],
 		},
 		{
 			name: "Databases",
@@ -77,6 +78,13 @@ export const data = {
 			color: "#35a7ff",
 			startYear: 2019,
 			experienceAreas: ["Docker", "Kubernetes", "Helm", "Load balancing"],
+		},
+		{
+			name: "Design",
+			icon: faPalette,
+			color: "#ff96ec",
+			startYear: 2019,
+			experienceAreas: ["Figma", "XD", "Illustrator", "Photoshop", "GIMP", "Inkscape"]
 		},
 		{
 			name: "Angular",
