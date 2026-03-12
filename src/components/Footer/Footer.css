@@ -1,6 +1,6 @@
 /* ===== Footer ===== */
 .footer {
-  background: var(--hero-bg);
+  background: var(--color-bg-alt);
   color: rgba(255, 255, 255, 0.6);
   padding: 2.25rem var(--content-padding);
   text-align: center;

@@ -1,11 +1,12 @@
 import "./Technologies.css";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { TechCard } from "./TechCard";
-import { useScrollReveal } from "../hooks/useScrollReveal";
+import { TechCard } from "../TechCard";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface Technology {
 	name: string;
 	icon: IconDefinition;
+	color: string;
 	startYear: number;
 	experienceAreas: string[];
 }
@@ -21,7 +22,7 @@ export function Technologies({ technologies }: TechnologiesProps) {
 		<section className="technologies">
 			<div className="content" ref={containerRef}>
 				<div className="section-header" data-reveal>
-					<h2>Technologies & Experience</h2>
+					<h2 style={{ color: "white" }}>Technologies & Experience</h2>
 				</div>
 				<div className="tech-grid">
 					{technologies.map((tech, i) => (

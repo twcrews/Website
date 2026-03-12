@@ -1,6 +1,6 @@
 import "./Projects.css";
-import { ProjectCard } from "./ProjectCard";
-import { useScrollReveal } from "../hooks/useScrollReveal";
+import { ProjectCard } from "../ProjectCard";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface Project {
 	name: string;
@@ -25,7 +25,7 @@ export function Projects({ projects }: ProjectsProps) {
 					<h2>Featured Projects</h2>
 				</div>
 				<div className="projects-grid">
-					{projects.map((project, i) => (
+					{[...projects].sort((a, b) => b.year - a.year).map((project, i) => (
 						<ProjectCard key={project.name} {...project} index={i} />
 					))}
 				</div>

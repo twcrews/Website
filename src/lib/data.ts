@@ -1,5 +1,20 @@
-import { faAndroid, faAngular, faApple, faDocker, faGithub, faLinkedin, faMicrosoft, faPhp, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faCloud, faDatabase, faScroll } from "@fortawesome/free-solid-svg-icons";
+import {
+	faAndroid,
+	faAngular,
+	faApple,
+	faDocker,
+	faGithub,
+	faLinkedin,
+	faMicrosoft,
+	faPhp,
+	faPython,
+	faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+	faCloud,
+	faDatabase,
+	faScroll,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const data = {
 	name: "Tommy Crews",
@@ -10,6 +25,7 @@ export const data = {
 		{
 			name: ".NET",
 			icon: faMicrosoft,
+			color: "#b283ff",
 			startYear: 2010,
 			experienceAreas: [
 				"ASP.NET Core",
@@ -23,48 +39,56 @@ export const data = {
 		{
 			name: "Scripting",
 			icon: faScroll,
+			color: "#67d13a",
 			startYear: 2010,
 			experienceAreas: ["PowerShell", "sh/bash/zsh", "VBScript", "DOS/batch"],
 		},
 		{
 			name: "Python",
 			icon: faPython,
+			color: "#4facf8",
 			startYear: 2016,
 			experienceAreas: ["NumPy", "Cython"],
 		},
 		{
+			name: "React",
+			icon: faReact,
+			color: "#61DAFB",
+			startYear: 2019,
+			experienceAreas: ["Redux", "Router", "TypeScript", "Material"],
+		},
+		{
 			name: "Databases",
 			icon: faDatabase,
+			color: "#f6ff46",
 			startYear: 2019,
 			experienceAreas: ["SQL Server", "Cosmos DB", "MySQL", "SQLite", "FoxPro"],
 		},
 		{
 			name: "PHP",
 			icon: faPhp,
+			color: "#bcb6ff",
 			startYear: 2019,
 			experienceAreas: ["Composer", "WordPress", "Session Management"],
 		},
 		{
-			name: "Containerization",
+			name: "Containers",
 			icon: faDocker,
+			color: "#35a7ff",
 			startYear: 2019,
 			experienceAreas: ["Docker", "Kubernetes", "Helm", "Load balancing"],
 		},
 		{
-			name: "React",
-			icon: faReact,
-			startYear: 2019,
-			experienceAreas: ["Redux", "Router", "TypeScript", "Material"],
-		},
-		{
 			name: "Angular",
 			icon: faAngular,
+			color: "#ff567a",
 			startYear: 2023,
 			experienceAreas: ["AngularJS interop", "Signals", "RxJS", "Router"],
 		},
 		{
 			name: "iOS",
 			icon: faApple,
+			color: "#c0c0c0",
 			startYear: 2023,
 			experienceAreas: [
 				"Swift",
@@ -77,6 +101,7 @@ export const data = {
 		{
 			name: "Android",
 			icon: faAndroid,
+			color: "#3DDC84",
 			startYear: 2023,
 			experienceAreas: [
 				"Kotlin",
@@ -89,6 +114,7 @@ export const data = {
 		{
 			name: "Cloud",
 			icon: faCloud,
+			color: "#ffc233",
 			startYear: 2023,
 			experienceAreas: ["Azure", "Azure DevOps", "AWS", "Modal", "Cloudflare"],
 		},
@@ -218,7 +244,7 @@ export const data = {
 			description: ".NET Client library for Planning Center",
 			year: 2024,
 			technologies: [".NET", "C#"],
-			link: "https://github.com/twcrews/cos-internal-dashboard",
+			link: "https://github.com/twcrews/planningcenter-api",
 			details:
 				"This is a statically-typed and fluent API client library for all Planning Center products. I created this library to accelerate future Planning Center application development.",
 		},
@@ -237,6 +263,6 @@ export const data = {
 	],
 	footer: {
 		copyright: "&copy; 2025 Tommy Crews. Built with Reat and Vite.",
-		source: "https://github.com/twcrews/Website"
-	}
+		source: "https://github.com/twcrews/Website",
+	},
 };
