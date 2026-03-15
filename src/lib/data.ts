@@ -56,7 +56,14 @@ export const data = {
 			icon: faReact,
 			color: "#61DAFB",
 			startYear: 2019,
-			experienceAreas: ["Router", "Context", "TypeScript", "Material", "Chakra", "Redux"],
+			experienceAreas: [
+				"Router",
+				"Context",
+				"TypeScript",
+				"Material",
+				"Chakra",
+				"Redux",
+			],
 		},
 		{
 			name: "Databases",
@@ -84,7 +91,14 @@ export const data = {
 			icon: faPalette,
 			color: "#ff96ec",
 			startYear: 2019,
-			experienceAreas: ["Figma", "XD", "Illustrator", "Photoshop", "GIMP", "Inkscape"]
+			experienceAreas: [
+				"Figma",
+				"XD",
+				"Illustrator",
+				"Photoshop",
+				"GIMP",
+				"Inkscape",
+			],
 		},
 		{
 			name: "Angular",
@@ -125,6 +139,87 @@ export const data = {
 			color: "#ffc233",
 			startYear: 2023,
 			experienceAreas: ["Azure", "Azure DevOps", "AWS", "Modal", "Cloudflare"],
+		},
+	],
+	employers: [
+		{
+			name: "Darlington Public School",
+			locations: ["El Reno, OK"],
+			position: "Software Engineer",
+			duties: [
+				"Develop custom educational software and integrations",
+				"Manage systems, domains, and policies",
+				"Design and manage network infrastructure",
+			],
+			technologies: [".NET", "React", "TypeScript", "VB"],
+			startDate: "2010-01-01",
+			endDate: "2020-05-01",
+		},
+		{
+			name: "NASA",
+			locations: [
+				"Southwestenrn Oklahoma State University",
+				"Marshall Space Flight Center",
+			],
+			position: "Software Development Intern, Technical Lead",
+			duties: [
+				"Reconstruct and modernize legacy aerosol mapping software",
+				"Establish HPC contracts and connections",
+				"Build launch simulation software for Space Launch System",
+			],
+			technologies: ["Python", "Cython", "C"],
+			startDate: "2016-05-01",
+			endDate: "2017-08-01",
+		},
+		{
+			name: "SWOSU Residence Life",
+			locations: ["Southwestern Oklahoma State University"],
+			position: "Marketing and Communications Manager",
+			duties: [
+				"Create websites and digital marketing materials",
+				"Design and maintain residential databases",
+			],
+			technologies: [
+				"Core web (HTML/CSS/JS)",
+				".NET",
+				"SQL",
+				"Graphic design software",
+			],
+			startDate: "2018-08-01",
+			endDate: "2019-04-01",
+		},
+		{
+			name: "Paycom",
+			locations: ["Oklahoma City"],
+			position: "Software Development Team Lead",
+			duties: [
+				"Redesign, modernize, and consolidate internal legacy apps",
+				"Implement CI/CD pipelines and load-balanced containers",
+				"Contribute to React UI library and design system"
+			],
+			technologies: ["React", "TypeScript", ".NET", "PHP", "SQL", "Kubernetes"],
+			startDate: "2019-04-01",
+			endDate: "2023-03-01",
+		},
+		{
+			name: "Phase 2",
+			locations: ["Oklahoma City", "Remote"],
+			position: "Software Engineer",
+			duties: [
+				"Architect full-stack mobile apps for clients",
+				"Modernize and maintain legacy intranet apps and systems",
+				"Serve as technical consultant and advisor for clients"
+			],
+			technologies: [
+				"iOS (Swift)",
+				"Android (Kotlin)",
+				".NET",
+				"AngularJS",
+				"Angular",
+				"TypeScript",
+				"SQL",
+			],
+			startDate: "2023-03-01",
 		},
 	],
 	projects: [
