@@ -22,7 +22,7 @@ export function Technologies({ technologies }: TechnologiesProps) {
 		<section className="technologies">
 			<div className="content" ref={containerRef}>
 				<div className="section-header" data-reveal>
-					<h2 style={{ color: "white" }}>Technologies & Experience</h2>
+					<h2>Technologies & Experience</h2>
 				</div>
 				<div className="tech-grid">
 					{technologies.map((tech, i) => (

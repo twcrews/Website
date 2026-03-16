@@ -1,11 +1,7 @@
 /* ===== Technologies Section ===== */
 .technologies {
   padding: var(--section-padding) 0;
-  background: var(--color-bg-alt);
-}
-
-.white-text {
-  color: white;
+  background: var(--color-bg);
 }
 
 .tech-grid {
