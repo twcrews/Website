@@ -18,7 +18,7 @@ export function useScrollReveal<T extends HTMLElement>(): RefObject<T | null> {
 					}
 				});
 			},
-			{ threshold: 0.5, rootMargin: '0px 0px -40px 0px' }
+			{ threshold: 0.2, rootMargin: '0px 0px -40px 0px' }
 		);
 
 		elements.forEach((el) => observer.observe(el));
