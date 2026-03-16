@@ -118,6 +118,28 @@
   animation: fadeUp 0.55s 0.22s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+  animation: fadeUp 0.55s 0.27s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.resume-btn:hover {
+  background: var(--color-surface-alt);
+  box-shadow: var(--shadow-md);
+}
+
 .social-links {
   display: flex;
   gap: 0.625rem;

@@ -1,0 +1,144 @@
+/* ===== Employers / Timeline Section ===== */
+.employers {
+  padding: var(--section-padding) 0;
+  background: var(--color-surface-alt);
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Continuous vertical rule through all dots */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 127px;  /* centered in timeline-item column: 96 + 16 + 16 - 1 px  */
+  top: 24px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-accent) 90%, transparent);
+  border-radius: var(--radius-full);
+  opacity: 0.35;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 96px 16px 1fr;
+  column-gap: 24px;
+  align-items: start;
+}
+
+.years-text {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  justify-self: end;
+  color: var(--color-text);
+}
+
+/* ===== Dot ===== */
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-text);
+  border: 2px solid var(--color-surface-alt);
+  box-shadow: 0 0 0 2px var(--color-text);
+  margin-top: 24px;
+  justify-self: center;
+  flex-shrink: 0;
+}
+
+/* ===== Card ===== */
+.timeline-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.timeline-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.timeline-card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.employer-position {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.employer-location {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.employer-duties {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.employer-duties li {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.employer-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.employer-tech-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--color-primary-light);
+  border-radius: var(--radius-full);
+  padding: 0.2rem 0.65rem;
+  white-space: nowrap;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    grid-template-columns: 0 1rem 1fr;
+    column-gap: 0.75rem;
+  }
+
+  .timeline-years {
+    display: none;
+  }
+
+  .timeline-card-header h3::after {
+    content: attr(data-years);
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 0.15rem;
+  }
+}

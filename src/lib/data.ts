@@ -351,6 +351,14 @@ export const data = {
 			details:
 				"This is a statically-typed and fluent API client library for all Planning Center products. I created this library to accelerate future Planning Center application development.",
 		},
+		{
+			name: "Sequence Decks",
+			description: "Blazor WASM app to replace 2020 WPF app",
+			year: 2025,
+			technologies: ["Blazor", ".NET", "JS"],
+			link: "https://github.com/twcrews/sequence-decks",
+			details: "This is a WebAssembly static files app meant to replace the old \"SightWordCards\" application. I created it to teach myself the Blazor framework."
+		}
 	],
 	links: [
 		{

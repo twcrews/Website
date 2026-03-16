@@ -5,13 +5,19 @@
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.375rem;
+  justify-content: center;
+}
+
+.projects-grid > * {
+  flex: 0 1 340px;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .projects-grid > * {
+    flex-basis: 100%;
   }
 }

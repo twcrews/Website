@@ -1,7 +1,7 @@
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon, faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 interface SocialLink {
 	name: string;
@@ -34,6 +34,10 @@ export function Hero({ name, tagline, image, links, theme, onThemeToggle }: Hero
 				</div>
 				<h1>{name}</h1>
 				<p className="tagline">{tagline}</p>
+				<a href="/resume.pdf" download className="resume-btn">
+					<FontAwesomeIcon icon={faFileArrowDown} />
+					Download Résumé
+				</a>
 				<div className="social-links">
 					{links.map((link) => (
 						<a
