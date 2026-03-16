@@ -68,7 +68,7 @@ export const data = {
 		{
 			name: "Databases",
 			icon: faDatabase,
-			color: "#f6ff46",
+			color: "#cdd10d",
 			startYear: 2019,
 			experienceAreas: ["SQL Server", "Cosmos DB", "MySQL", "SQLite", "FoxPro"],
 		},
@@ -136,7 +136,7 @@ export const data = {
 		{
 			name: "Cloud",
 			icon: faCloud,
-			color: "#ffc233",
+			color: "#ffb01e",
 			startYear: 2023,
 			experienceAreas: ["Azure", "Azure DevOps", "AWS", "Modal", "Cloudflare"],
 		},
