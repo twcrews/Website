@@ -43,6 +43,10 @@ export function Employers({ employers }: EmployersProps) {
 							<div className="timeline-dot" />
 							<div className="timeline-card">
 								<div className="timeline-card-header">
+									<span className="card-years-mobile">
+										{formatYear(employer.startDate)}–
+										{employer.endDate ? formatYear(employer.endDate) : "Present"}
+									</span>
 									<h3>{employer.name}</h3>
 									<span className="employer-position">{employer.position}</span>
 									<span className="employer-location">

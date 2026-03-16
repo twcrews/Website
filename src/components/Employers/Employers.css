@@ -53,7 +53,12 @@
 }
 
 /* ===== Card ===== */
+.card-years-mobile {
+  display: none;
+}
+
 .timeline-card {
+  position: relative;
   background: var(--color-surface);
   border: 1px solid var(--color-glass-border);
   border-radius: var(--radius-lg);
@@ -80,7 +85,7 @@
 .employer-position {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .employer-location {
@@ -118,6 +123,12 @@
   white-space: nowrap;
 }
 
+/* ===== Light mode overrides ===== */
+:root:not([data-theme="dark"]) .employer-position,
+:root:not([data-theme="dark"]) .employer-tech-tag {
+  color: var(--color-primary);
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 600px) {
   .timeline::before {
@@ -132,12 +143,13 @@
     display: none;
   }
 
-  .timeline-card-header h3::after {
-    content: attr(data-years);
+  .card-years-mobile {
     display: block;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 0.15rem;
+    color: var(--color-text-muted);
   }
 }
