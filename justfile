@@ -1,5 +1,8 @@
+@_default:
+   just --list
+
 build:
    npm ci && npm run build
 
-run:
+start:
    npm ci && npm run dev
