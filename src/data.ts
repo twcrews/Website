@@ -19,7 +19,7 @@ import {
 
 export const data = {
 	name: "Tommy Crews",
-	image: "/family.png",
+	image: "res/family.png",
 	tagline:
 		"I'm a software engineer who's passionate about design and user experience.",
 	technologies: [
@@ -225,6 +225,7 @@ export const data = {
 	projects: [
 		{
 			name: "NASA MAPSS",
+			icon: "res/nasa.svg",
 			description: "Modular Aero-Propulsion System Simulation",
 			year: 2016,
 			technologies: ["Python", "C"],
@@ -234,6 +235,7 @@ export const data = {
 		},
 		{
 			name: "NASA MAESTRO",
+			icon: "res/nasa.svg",
 			description:
 				"Managed Automation Environment for Simulation, Test, and Real-Time Operations",
 			year: 2017,
@@ -253,6 +255,7 @@ export const data = {
 		},
 		{
 			name: "bCards",
+			icon: "res/b-cards.png",
 			description: "Offline-ready client-side flash cards PWA",
 			year: 2020,
 			technologies: ["React"],
@@ -280,6 +283,7 @@ export const data = {
 		},
 		{
 			name: "Paycom AIMS",
+			icon: "res/paycom.png",
 			description: "Application Information Management System",
 			year: 2021,
 			technologies: [
@@ -299,6 +303,7 @@ export const data = {
 		},
 		{
 			name: "Rotato Chip",
+			icon: "res/rotato-chip.png",
 			description: "Display rotation hotkeys for Windows 10",
 			year: 2021,
 			technologies: [".NET", "C#", "WPF"],
@@ -335,6 +340,7 @@ export const data = {
 		},
 		{
 			name: "COS Dashboard",
+			icon: "res/cos.svg",
 			description: "Internal dashboard for Planning Center data",
 			year: 2023,
 			technologies: ["Angular", "TypeScript", "Azure Functions", ".NET", "C#"],
@@ -344,6 +350,7 @@ export const data = {
 		},
 		{
 			name: "Planning Center API",
+			icon: "res/pcapi.png",
 			description: ".NET Client library for Planning Center",
 			year: 2024,
 			technologies: [".NET", "C#"],
@@ -361,6 +368,7 @@ export const data = {
 		},
 		{
 			name: "Nexus",
+			icon: "res/nexus.png",
 			description: "Unified software engineering dashboard",
 			year: 2026,
 			technologies: [".NET", "C#", "Blazor", "JS", "CSS"],

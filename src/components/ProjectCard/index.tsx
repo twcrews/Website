@@ -2,6 +2,7 @@ import "./ProjectCard.css";
 
 interface ProjectCardProps {
 	name: string;
+	icon?: string;
 	description: string;
 	details: string;
 	year: number;
@@ -10,7 +11,7 @@ interface ProjectCardProps {
 	index?: number;
 }
 
-export function ProjectCard({ name, description, details, year, technologies, link, index = 0 }: ProjectCardProps) {
+export function ProjectCard({ name, icon, description, details, year, technologies, link, index = 0 }: ProjectCardProps) {
 	return (
 		<a
 			href={link}
@@ -21,7 +22,10 @@ export function ProjectCard({ name, description, details, year, technologies, li
 			style={{ '--stagger': index } as React.CSSProperties}
 		>
 			<div className="project-header">
-				<h3>{name}</h3>
+				<span className="project-title">
+					{icon && <img src={icon} alt={name} className="project-icon" />}
+					<h3>{name}</h3>
+				</span>
 				<span className="project-year">{year}</span>
 			</div>
 			<p className="project-description">{description}</p>

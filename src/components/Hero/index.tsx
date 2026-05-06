@@ -34,7 +34,7 @@ export function Hero({ name, tagline, image, links, theme, onThemeToggle }: Hero
 				</div>
 				<h1>{name}</h1>
 				<p className="tagline">{tagline}</p>
-				<a href="/Resume.ThomasCrews.pdf" download className="resume-btn">
+				<a href="res/Resume.ThomasCrews.pdf" download className="resume-btn">
 					<FontAwesomeIcon icon={faFileArrowDown} />
 					Download Résumé
 				</a>
