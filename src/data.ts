@@ -358,6 +358,15 @@ export const data = {
 			technologies: ["Blazor", ".NET", "JS"],
 			link: "https://github.com/twcrews/sequence-decks",
 			details: "This is a WebAssembly static files app meant to replace the old \"SightWordCards\" application. I created it to teach myself the Blazor framework."
+		},
+		{
+			name: "Nexus",
+			description: "Unified software engineering dashboard",
+			year: 2026,
+			technologies: [".NET", "C#", "Blazor", "JS", "CSS"],
+			link: "https://nexus.crews.dev",
+			details:
+				"Nexus is a unified dashboard for software engineers, aggregating data from various sources like GitHub and Azure DevOps. I created Nexus to streamline the workflow of software engineers by providing a single pane of glass for all their essential information."
 		}
 	],
 	links: [

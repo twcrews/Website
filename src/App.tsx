@@ -1,5 +1,5 @@
 import "./App.css";
-import { data } from "./lib/data";
+import { data } from "./data";
 import { useTheme } from "./hooks/useTheme";
 import { Hero } from "./components/Hero";
 import { Technologies } from "./components/Technologies";
