@@ -368,13 +368,47 @@ export const data = {
 		},
 		{
 			name: "Nexus",
-			icon: "res/nexus.png",
+			icon: "res/nexus.svg",
 			description: "Unified software engineering dashboard",
 			year: 2026,
 			technologies: [".NET", "C#", "Blazor", "JS", "CSS"],
 			link: "https://nexus.crews.dev",
+			workInProgress: true,
 			details:
 				"Nexus is a unified dashboard for software engineers, aggregating data from various sources like GitHub and Azure DevOps. I created Nexus to streamline the workflow of software engineers by providing a single pane of glass for all their essential information."
+		},
+		{
+			name: "Skope",
+			icon: "res/skope.svg",
+			description: "Dashboard builder for Planning Center data",
+			year: 2026,
+			technologies: [".NET", "C#", "Blazor", "JS", "CSS", "Cloud", "SQL"],
+			link: "https://github.com/twcrews/skope",
+			workInProgress: true,
+			details:
+				"Skope is a dashboard builder for Planning Center data. It allows users to create custom dashboards with drag-and-drop widgets, providing insights and analytics on their Planning Center data. Skope is the successor to the COS dashboard project."
+		},
+		{
+			name: "Chapters",
+			icon: "res/chapters.svg",
+			description: "Book club social network",
+			year: 2026,
+			technologies: ["React Native", "TypeScript", "Node", "SQL", "Cloud", "Google APIs"],
+			link: "https://github.com/twcrews/chapters",
+			workInProgress: true,
+			details:
+				"Chapters is a book club social network that allows users to create and join book clubs, track their friends' reading progress, and share spoiler-free thoughts with other members of their clubs. It integrates with the Google Books API for book data."
+		},
+		{
+			name: "Crust",
+			icon: "res/crust.svg",
+			description: "VS Code extension for the Pi Coding Agent",
+			year: 2026,
+			technologies: ["TypeScript", "Node"],
+			link: "https://marketplace.visualstudio.com/items?itemName=crews.crust",
+			workInProgress: true,
+			details:
+				"Crust is an extension for Visual Studio Code that acts as a UI for the Pi Coding Agent. It aims for feature parity with similar extensions like Claude Code, offering features like IDE file/selection context."
 		}
 	],
 	links: [

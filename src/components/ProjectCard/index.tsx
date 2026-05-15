@@ -8,10 +8,11 @@ interface ProjectCardProps {
 	year: number;
 	technologies: string[];
 	link: string;
+	workInProgress?: boolean;
 	index?: number;
 }
 
-export function ProjectCard({ name, icon, description, details, year, technologies, link, index = 0 }: ProjectCardProps) {
+export function ProjectCard({ name, icon, description, details, year, technologies, link, workInProgress = false, index = 0 }: ProjectCardProps) {
 	return (
 		<a
 			href={link}
@@ -26,7 +27,10 @@ export function ProjectCard({ name, icon, description, details, year, technologi
 					{icon && <img src={icon} alt={name} className="project-icon" />}
 					<h3>{name}</h3>
 				</span>
-				<span className="project-year">{year}</span>
+				<span className="project-meta">
+					{workInProgress && <span className="project-status">Work in progress</span>}
+					<span className="project-year">{year}</span>
+				</span>
 			</div>
 			<p className="project-description">{description}</p>
 			<p className="project-details">{details}</p>

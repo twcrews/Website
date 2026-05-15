@@ -4,11 +4,13 @@ import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface Project {
 	name: string;
+	icon?: string;
 	description: string;
 	details: string;
 	year: number;
 	technologies: string[];
 	link: string;
+	workInProgress?: boolean;
 }
 
 interface ProjectsProps {
