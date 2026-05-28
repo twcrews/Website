@@ -354,7 +354,7 @@ export const data = {
 			description: ".NET Client library for Planning Center",
 			year: 2024,
 			technologies: [".NET", "C#"],
-			link: "https://github.com/twcrews/planningcenter-api",
+			link: "https://pcapi.crews.dev",
 			details:
 				"This is a statically-typed and fluent API client library for all Planning Center products. I created this library to accelerate future Planning Center application development.",
 		},
