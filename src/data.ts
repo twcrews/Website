@@ -393,11 +393,11 @@ export const data = {
 			icon: "res/chapters.svg",
 			description: "Book club social network",
 			year: 2026,
-			technologies: ["React Native", "TypeScript", "Node", "SQL", "Cloud", "Google APIs"],
-			link: "https://github.com/twcrews/chapters",
+			technologies: ["React Native", "TypeScript", "Node", "SQL", "Cloud"],
+			link: "https://readchapters.app",
 			workInProgress: true,
 			details:
-				"Chapters is a book club social network that allows users to create and join book clubs, track their friends' reading progress, and share spoiler-free thoughts with other members of their clubs. It integrates with the Google Books API for book data."
+				"Chapters is a book club social network that allows users to create and join book clubs, track their friends' reading progress, and share spoiler-free thoughts with other members of their clubs."
 		},
 		{
 			name: "Crust",
