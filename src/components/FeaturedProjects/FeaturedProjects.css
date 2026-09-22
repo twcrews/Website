@@ -1,0 +1,116 @@
+.featured-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 14px;
+}
+
+.featured-card {
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(170deg, #161a20 0%, #11141a 100%);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color 220ms,
+    transform 220ms,
+    box-shadow 220ms;
+}
+
+.featured-card:hover {
+  border-color: rgba(138, 180, 255, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.9);
+}
+
+.featured-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.featured-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.featured-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.featured-name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.featured-status {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  padding: 3px 7px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  color: var(--ink-mute);
+  background: var(--fill-2);
+}
+
+.featured-status.is-wip {
+  color: var(--live);
+  background: rgba(125, 211, 160, 0.13);
+}
+
+.featured-body {
+  padding: 15px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.featured-headline {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-3);
+  text-wrap: pretty;
+}
+
+.featured-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.featured-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+}
+
+.featured-open {
+  color: var(--accent);
+}

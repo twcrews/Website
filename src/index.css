@@ -1,14 +1,19 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #0b0d10;
+  color: #e8eaed;
+  font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -19,11 +24,46 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
 }
 
 a {
-  color: inherit;
+  color: #8ab4ff;
   text-decoration: none;
+}
+
+a:hover {
+  color: #b9d1ff;
+}
+
+::selection {
+  background: #8ab4ff;
+  color: #0b0d10;
+}
+
+:focus-visible {
+  outline: 2px solid #8ab4ff;
+  outline-offset: 2px;
 }

@@ -1,36 +1,56 @@
-/* ===== Footer ===== */
 .footer {
-  background: var(--color-bg-alt);
-  color: rgba(255, 255, 255, 0.6);
-  padding: 2.25rem var(--content-padding);
-  text-align: center;
+  border-top: 1px solid var(--rule-2);
+  background: var(--bg-deep);
+}
+
+.footer-main {
+  padding: 12px var(--content-padding);
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
-  font-size: 0.875rem;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer p {
-  margin: 0;
+.footer-headline {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
-.footer-button {
-  padding: 0.45rem 1.125rem;
-  border-radius: var(--radius-md);
-  border: 1.5px solid rgba(255, 255, 255, 0.18);
-  transition: all var(--transition-base);
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.05);
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
 }
 
-.footer-button:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.45);
-  color: white;
+.footer-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-rule {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-legal {
+  padding: 14px var(--content-padding);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+.footer-source {
+  color: var(--ink-faint);
+}
+
+.footer-source:hover {
+  color: var(--ink-mute);
 }

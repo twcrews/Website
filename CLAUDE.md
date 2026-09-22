@@ -55,4 +55,4 @@ The project uses a split TypeScript configuration:
 ## Assets
 
 - Static assets are served from the `public/` directory
-- Family photo at `/family.png` (used in Hero section)
+- Family photo at `/family.jpeg` (used in Hero section)

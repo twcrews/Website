@@ -1,0 +1,133 @@
+.index-section {
+  padding-bottom: clamp(56px, 7vw, 96px);
+}
+
+.index-filters {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.index-filter {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  padding: 7px 11px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 160ms;
+  color: var(--ink-mute);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.index-filter:hover {
+  color: var(--ink);
+  border-color: var(--rule-4);
+}
+
+.index-filter.is-active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.index-table {
+  margin-top: 16px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.index-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1.35fr) 164px;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  padding: 12px 16px;
+  background: var(--bg-elev);
+  transition: background 150ms;
+}
+
+.index-row:last-child {
+  border-bottom: 0;
+}
+
+.index-row:hover {
+  background: var(--bg-elev-2);
+}
+
+.index-year {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-dim);
+}
+
+.index-identity {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.index-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.index-name {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.index-wip {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--live);
+  flex-shrink: 0;
+}
+
+.index-description {
+  font-size: 13px;
+  color: var(--ink-mute);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.index-chips {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 860px) {
+  .index-row {
+    grid-template-columns: 52px minmax(0, 1fr) 120px;
+  }
+
+  .index-description {
+    display: none;
+  }
+}

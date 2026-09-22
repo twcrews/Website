@@ -1,30 +1,41 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import { useEffect } from "react";
 
-export function useScrollReveal<T extends HTMLElement>(): RefObject<T | null> {
-	const ref = useRef<T>(null);
-
+/**
+ * Adds `.revealed` to every `[data-reveal]` element as it scrolls into view.
+ * Re-runs on each render so elements added by filtering are picked up.
+ */
+export function useScrollReveal() {
 	useEffect(() => {
-		const container = ref.current;
-		if (!container) return;
+		if (!("IntersectionObserver" in window)) {
+			document
+				.querySelectorAll("[data-reveal]")
+				.forEach((el) => el.classList.add("revealed"));
+			return;
+		}
 
-		const elements = container.querySelectorAll<HTMLElement>('[data-reveal]');
-
-		const observer = new IntersectionObserver(
+		const io = new IntersectionObserver(
 			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('revealed');
-						observer.unobserve(entry.target);
-					}
-				});
+				for (const entry of entries) {
+					if (!entry.isIntersecting) continue;
+					entry.target.classList.add("revealed");
+					io.unobserve(entry.target);
+				}
 			},
-			{ threshold: 0.2, rootMargin: '0px 0px -40px 0px' }
+			{ rootMargin: "-6% 0px -8% 0px" },
 		);
 
-		elements.forEach((el) => observer.observe(el));
+		const observe = () =>
+			document
+				.querySelectorAll("[data-reveal]:not(.revealed)")
+				.forEach((el) => io.observe(el));
 
-		return () => observer.disconnect();
+		observe();
+		const mo = new MutationObserver(observe);
+		mo.observe(document.body, { childList: true, subtree: true });
+
+		return () => {
+			mo.disconnect();
+			io.disconnect();
+		};
 	}, []);
-
-	return ref;
 }
