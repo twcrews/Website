@@ -265,7 +265,6 @@ const projects: Project[] = [
 		name: "Chapters",
 		icon: "res/chapters.svg",
 		year: 2026,
-		workInProgress: true,
 		featured: true,
 		layers: ["web", "mobile", "backend", "data", "infra"],
 		description: "Book club social network",
